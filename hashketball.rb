@@ -34,13 +34,7 @@ def num_points_scored(player_n)
       return player[:points] if player[:player_name] == player_n
     end
   end
-end
-
-
-# Alternate code
-# def num_points_scored(player_n)
-#   player_stats(player_n)[:points]
-# end
+end 
 
 
 def shoe_size(player_n)
@@ -106,8 +100,6 @@ def big_shoe_rebounds
 end
 
 
-# Bonus
-
 def most_points_scored
   most_points = 0
   mvp = ''
@@ -150,9 +142,6 @@ def player_with_longest_name
   return longest
 end
 
-
-# Super Bonus
-
 def long_name_steals_a_ton?
   steals_most = ''
   most_steals = 0
@@ -163,6 +152,4 @@ def long_name_steals_a_ton?
   end
   return true if steals_most == player_with_longest_name
 end
-
-describe 'bonus' do
 
